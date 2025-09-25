@@ -46,4 +46,12 @@ public class SongController {
     public ApiResponse<List<Song>> getAllSongs() {
         return new ApiResponse<>(new Result(0, "OK"), songService.getAllSongs());
     }
+    @DeleteMapping("/{id}")
+    public ApiResponse<Void> deleteById(@PathVariable Long id) {
+        boolean result = songService.deleteById(id);
+        if(result) {
+            return new ApiResponse<>(new Result(0, "OK"), null);
+        }
+        return new ApiResponse<>(new Result(0, "Delete failed"), null);
+    }
 }
