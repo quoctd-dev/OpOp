@@ -9,4 +9,6 @@ public interface SongService {
     public List<Song> getSongByTitle(String title);
     public Song saveSong(Song song);
     public List<Song> getAllSongs();
+
+    public boolean deleteById(Long id);
 }

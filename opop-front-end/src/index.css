@@ -1,13 +1,228 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --main-color: #1f1f1f;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.signin-layout {
+    min-height: 100vh;
+    background: linear-gradient(#2a2a2a, #000);
+}
+
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.signin-box {
+    background: #111;
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.signin-logo {
+    width: 150px;
+}
+
+.signin-title {
+    color: white !important;
+    margin-bottom: 20px !important;
+}
+
+.signin-social {
+    margin-bottom: 10px;
+    border-radius: 25px !important;
+    height: 45px !important;
+    border-color: white;
+    background: #111;
+    color: white;
+}
+
+.signin-social.ant-btn:hover {
+    color: white !important;
+    border-color: #d51114 !important;
+    background: #d51114 !important;
+}
+
+.signin-divider {
+    background-color: #333 !important;
+}
+
+.signin-label {
+    color: white;
+}
+
+.signin-checkbox {
+    color: white;
+}
+
+.signin-submit {
+    background-color: #d51114 !important;
+    border-color: #d51114 !important;
+    border-radius: 25px !important;
+    height: 45px !important;
+    font-weight: bold;
+}
+
+.signin-text {
+    color: white;
+}
+
+.signin-link {
+    color: #91caff !important;
+}
+
+.header-logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+.home {
+    color: white;
+    width: 100px;
+    background: #1f1f1f;
+    cursor: pointer;
+}
+/*.home:hover {*/
+/*    color: white;*/
+/*    width: 100px;*/
+/*    background: #575656;*/
+/*}*/
+
+.header {
+    background: black;
+}
+
+.search {
+    max-width: 470px;
+}
+
+.search .ant-input {
+    color: white;
+    height: 50px;
+    background-color: var(--main-color);;
+    border-radius: 20px;
+    border: 1px solid var(--main-color);;
+    opacity: 1;
+}
+
+.search .ant-input-search-button {
+    background-color: #434445; /* màu nút */
+    color: white;
+    height: 50px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.search .ant-input-search-button:hover {
+    background-color: #d21717; /* hover nút */
+}
+.search .ant-input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    max-width: calc(250px * 4 + 16px * 3);
+    margin: auto;
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 16px;
+    border-radius: 8px;
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.img-card {
+    transform: rotate(30deg);
+    width: 80px;
+    height: 80px;
+    margin-top: 60px;
+    margin-left: 115px;
+}
+
+.song-card {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 8px;
+    height: 220px;
+    color: white;
+    width: 150px;
+}
+.song-card:hover {
+    background-color: #1f1f1f;
+}
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-song {
+    width: 130px;
+    height: 130px;
+}
+.song-container {
+    /*margin: auto;*/
+}
+.title-card-text {
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.artist-card-text {
+    text-align: left;
+    margin: 0;
+}
+.swiper-slide {
+    margin: 0 !important;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name h1{
+    color: white;
+}
+.name h5{
+    color: #777575;
+}
+
+.artist-card {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 8px;
+    height: 200px;
+    color: white;
+    width: 150px;
+}
+
+.artist-card:hover {
+    background-color: #1f1f1f;
+}
+
+.img-artist {
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
 }
